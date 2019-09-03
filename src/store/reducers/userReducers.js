@@ -6,12 +6,11 @@ var initialState = {
 
 const userReducer = (state = initialState, action) => {
     switch (action) {
-        case actionTypes.LOGIN_SUCCESS: {
+        case actionTypes.LOGIN_SUCCESS:
             return {
                 ...state,
                 isLoggedIn: true,
-            }
-        };
+            };
         default: return state;
     }
 }
