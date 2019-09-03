@@ -1,12 +1,13 @@
 import React, { Component, Fragment } from 'react';
 import ReactDom from 'react-dom';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { connect } from 'react-redux';
 
 import Login from '../routes/Login';
 import Register from '../routes/Register';
 import Home from '../routes/Home';
 
-import {UserIsAuthenticated} from '../hoc/authentication';
+import { UserIsAuthenticated } from '../hoc/authentication';
 
 class App extends Component {
     render() {
@@ -21,5 +22,17 @@ class App extends Component {
         )
     }
 }
+const mapStateToProps = state => {
+    return {
+        isLoggedIn: state.user.isLoggedIn,
+    }
+}
 
-export default App;
+const mapDispatchToProps = dispatch => {
+    return {
+
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
+// export default App;
