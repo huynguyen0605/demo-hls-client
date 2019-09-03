@@ -1,0 +1,20 @@
+@import '../styles/common.scss';
+
+.container {
+    width: 30%;
+}
+.card-body-wrapper {
+    width: 80%;
+    align-self: center;
+}
+.separator {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn-container {
+    display: flex;
+    flex-direction: row;
+}
+.btn btn-primary {
+    flex: 1;
+}

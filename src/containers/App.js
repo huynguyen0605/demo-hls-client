@@ -1,5 +1,4 @@
-import React, { Component, Fragment } from 'react';
-import ReactDom from 'react-dom';
+import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { connect } from 'react-redux';
 
@@ -15,6 +14,7 @@ class App extends Component {
             <Router>
                 <Link to='/login'>Login</Link>
                 <Link to='/register'>Register</Link>
+                <Link to='/home'>Home</Link>
                 <Route path='/login' component={Login}></Route>
                 <Route path='/register' component={Register}></Route>
                 <Route path='/home' component={UserIsAuthenticated(Home)}></Route>
