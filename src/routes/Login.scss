@@ -18,3 +18,12 @@
 .btn btn-primary {
     flex: 1;
 }
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+.register-container {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+}

@@ -1,5 +1,5 @@
 import actionTypes from './actionTypes';
 
-const loginSuccess = () => ({
+export const loginSuccess = () => ({
     type: actionTypes.LOGIN_SUCCESS,
 });
